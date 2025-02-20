@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#! Set the domain
+echo "Enter the domain of the machine"
+read domain
+#! Set hostname
+echo "Enter the hostname of the machine"
+read hostname
 
 OS=$(grep "^ID=" /etc/os-release | cut -d "=" -f 2 | cut -d '"' -f 2)
 
