@@ -1,5 +1,6 @@
 #!/bin/bash
-# This script will install samba server on your system
+
+
 OS=$(grep "^ID=" /etc/os-release | cut -d "=" -f 2 | cut -d '"' -f 2)
 
 if [[ $OS == "debian" || $OS == "ubuntu" || $OS == "mint" ]]; then
